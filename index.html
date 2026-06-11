@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce Ball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="lobby">
+            <h1 class="bounce-title">BOUNCY BALL</h1>
+            <div class="lobby-menu">
+                <button id="playBtn" class="lobby-btn">PLAY</button>
+                <div class="lobby-level-select">
+                    <label>Select Map: </label>
+                    <select id="lobbyLevelSelect"></select>
+                </div>
+            </div>
+        </div>
+        
+        <div id="game-ui" style="display: none;">
+            <canvas id="gameCanvas" width="1200" height="800"></canvas>
+            <div id="controls">
+                <p>Use Left/Right Arrow Keys to move</p>
+                <div class="actions">
+                    <button id="backToLobbyBtn">Back to Lobby</button>
+                    <button id="restartBtn">Restart level</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
